@@ -6,6 +6,11 @@ This application is a shopping site that users can add products to their cart, o
 ## Code Overview
 - `QualityShopping/Entity` : This is Database entities and includes Entity Models.
 - `QualityShopping/DataAccess` : This is data access layer, includes Repository Pattern.
+- `QualityShopping/WebUI` : This contains MVC project
+-`QualityShopping.Business` :
+
+
+ 
 ## Screenshots
 ![](images/1.PNG) 
 ![](images/2.PNG)
