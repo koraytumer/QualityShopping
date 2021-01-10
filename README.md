@@ -4,7 +4,7 @@ This application is a shopping site that users can add products to their cart, o
 - Technology: Html, Css, .net Core Mvc, EntityFramework
 - Database: Microsoft SQL Server
 ## Screenshots 
-![](images/1.PNG)
+![](images/1.PNG width="20" height="40")
 ![](images/2.PNG)
 ![](images/3.PNG)
 ![](images/4.PNG)
@@ -14,3 +14,5 @@ This application is a shopping site that users can add products to their cart, o
 ![](images/8.PNG)
 ![](images/9.PNG)
 ![](images/10.PNG)
+
+ 
