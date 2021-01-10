@@ -1,4 +1,4 @@
-# Images from the Project
+# Screenshots
 ## User
 ![](images/1.PNG)
 ![](images/2.PNG)
