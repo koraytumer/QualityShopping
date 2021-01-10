@@ -1,0 +1,16 @@
+﻿@model CategoryListViewModel
+
+ 
+    <div class="list-group"> 
+        @foreach (var item in Model.Categories)
+        { 
+            <a asp-controller="Shop"
+               asp-action="List"
+               asp-route-category="@item.Name.ToLower()"
+               class="list-group-item d-flex list-group-item-action justify-content-between align-items-center @(Model.SelectedCategory==item.Name.ToLower()?"active":"")">
+                @item.Name
+                <span class="badge rounded-pill" style="text-align:end;">--</span>
+            </a> 
+        } 
+    </div>
+

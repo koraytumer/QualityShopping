@@ -1,0 +1,27 @@
+﻿@model ProductListModel
+
+<div class="row">
+    <div class="col-md-2">
+        @await Component.InvokeAsync("CategoryList")
+    </div>
+    @if (Model.Products.Count > 0)
+    {
+        <div class="col-md-10">
+            <div class="row">
+                @foreach (var product in Model.Products)
+                {
+                    <partial name="_product" for="@product" />
+                }
+            </div>
+            <div page-model="@Model.PageInfo"></div>
+        </div>
+    }
+    else
+    {
+        <div class="col-md-10">
+            <p class="alert alert-warning" style="width:750px;">No Product</p>
+        </div>
+    }
+</div>
+
+

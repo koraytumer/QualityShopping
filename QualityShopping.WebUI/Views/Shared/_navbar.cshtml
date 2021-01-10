@@ -1,0 +1,65 @@
+﻿
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Shopping</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="/" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Shop" asp-action="List" class="nav-link">Products</a>
+            </li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a asp-controller="Cart" asp-action="Index" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Cart" asp-action="GetOrders" class="nav-link">Orders</a>
+                </li>
+                if (User.IsInRole("admin"))
+                {
+                    <li class="nav-item">
+                        <a asp-controller="Admin" asp-action="CreateProduct" class="nav-link">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Admin" asp-action="ProductList" class="nav-link">Admin Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Admin" asp-action="CreateCategory" class="nav-link">Add Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Admin" asp-action="CategoryList" class="nav-link">Admin Categories</a>
+                    </li>
+                }
+            }
+        </ul>
+        <form class="navbar-nav mr-2">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a asp-controller="#" asp-action="#" class="nav-link">
+                        @User.Identity.Name
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Account" asp-action="Logout" class="nav-link">Logout</a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a asp-controller="Account" asp-action="Login" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Account" asp-action="Register" class="nav-link">Register</a>
+                </li>
+            }
+        </ul> 
+    </div>
+</nav>

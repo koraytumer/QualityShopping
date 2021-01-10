@@ -1,0 +1,17 @@
+﻿@model ProductListModel
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="row">
+    <div class="col-md-2">
+        @await Component.InvokeAsync("CategoryList")
+    </div>
+    <div class="col-md-10">
+        <partial name="_slider" />
+        <div class="row">
+            @foreach (var product in Model.Products)
+            {
+                <partial name="_product" for="@product" />
+            }
+        </div> 
+    </div>
+</div>
