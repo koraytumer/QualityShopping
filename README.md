@@ -1,6 +1,4 @@
-#QualityShopping
-
-## Images from the Project
+# Images from the Project
 ## User
 ![](images/1.PNG)
 ![](images/2.PNG)
