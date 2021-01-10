@@ -3,7 +3,10 @@ This application is a shopping site that users can add products to their cart, o
 ## Tools and Technologies
 - Technology: Html, Css, .net Core Mvc, EntityFramework
 - Database: Microsoft SQL Server
-## Screenshots 
+## Code Overview
+- QualityShopping/Entity : This is Database entities and includes 
+- QualityShopping/DataAccess : This is data access layer, includes Repository Pattern.
+## Screenshots
 ![](images/1.PNG) 
 ![](images/2.PNG)
 ![](images/3.PNG)
