@@ -1,5 +1,5 @@
 ## Basic Overview
-Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+This application is a shopping site that users can add products to their cart, ordering and buying products using this application. Users have to register website before to order their products and will be sent a verication link to them as an e-mail. Their account will not be confirmed before this confirmation link is clicked. Used .net core mvc, entity framework for this application.
 ## User
 ![](images/1.PNG)
 ![](images/2.PNG)
