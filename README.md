@@ -1,7 +1,7 @@
 # Basic Overview
-This application is a shopping site that users can add products to their cart, ordering and buying products using this application. Users have to register website before to order their products and will be sent a verication link to them as an e-mail. Their account will not be confirmed before this confirmation link is clicked. Used .net core mvc, entity framework for this application.
+This application is a shopping site that users can add products to their cart, ordering and buying products using this application. Users have to register website before ordering their products and will be sent a verication link to them as an e-mail. Their account will not be confirmed before this confirmation link is clicked. Used .net core mvc, entity framework for this application.
 ## Tools and Technologies
-- `Technology`: Html, Css, .net Core Mvc, EntityFramework
+- `Technology`: Html, Bootstrap, .net Core Mvc, EntityFramework
 - `Database`: Microsoft SQL Server 
 ## Code Overview
 - `QualityShopping/Entity` : This layer contains Database Entities and Models.
